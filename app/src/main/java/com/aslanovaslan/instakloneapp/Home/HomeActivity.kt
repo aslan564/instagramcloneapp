@@ -22,6 +22,9 @@ class HomeActivity : AppCompatActivity() {
 
     fun setNavigationBotomMenu() {
         BottonNavigationHelper.setupButtonNavigationLocation(this,bnve)
+        val menu=bnve.menu
+        val menuItem=menu.getItem(ACTIVITY_NO)
+        menuItem.isChecked = true
 
     }
 
