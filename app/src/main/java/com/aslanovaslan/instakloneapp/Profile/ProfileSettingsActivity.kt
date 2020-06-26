@@ -19,11 +19,11 @@ class ProfileSettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_settings)
 
-        setupIntentMoveActivity()
+        setupFragmentMoveNavigation()
         setNavigationBotomMenu()
     }
 
-    private fun setupIntentMoveActivity() {
+    private fun setupFragmentMoveNavigation() {
 
         tvEditProfileInfo.setOnClickListener {
             profileUserSettingContainer.visibility=View.GONE

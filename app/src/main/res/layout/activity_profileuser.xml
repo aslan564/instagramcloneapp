@@ -20,24 +20,21 @@
         android:id="@+id/discoverImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="192dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
         android:src="@drawable/ic_people_discover"
         app:layout_constraintBottom_toBottomOf="@+id/accountSettingsImageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/usernameToolbarTextView"
-        app:layout_constraintTop_toTopOf="@+id/accountSettingsImageView" />
+        app:layout_constraintEnd_toStartOf="@+id/accountSettingsImageView"
+        app:layout_constraintTop_toTopOf="@+id/accountSettingsImageView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/accountSettingsImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="16dp"
         android:src="@drawable/ic_profile_edit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toEndOf="@+id/discoverImageView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View

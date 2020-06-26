@@ -30,36 +30,32 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:layout_marginEnd="4dp"
+                    android:layout_marginEnd="16dp"
                     android:contentDescription="TODO"
                     android:src="@drawable/ic_appbardirect"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/imageLogoView"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/imageLogoView"
                     android:layout_width="150sp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="64dp"
                     android:contentDescription="TODO"
                     android:src="@drawable/clonelogo"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/imageDirectView"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageCameraView"
                     app:layout_constraintStart_toEndOf="@+id/imageCameraView"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
+                    app:layout_constraintTop_toTopOf="@+id/imageCameraView" />
 
                 <ImageView
                     android:id="@+id/imageCameraView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
                     android:contentDescription="TODO"
                     android:src="@drawable/ic_appbarcamera"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/imageLogoView"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.522" />
@@ -85,18 +81,6 @@
             app:layout_constraintStart_toStartOf="@id/appbar"
             app:layout_constraintTop_toBottomOf="@+id/appbar" />
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/homeViewPager"
-            android:layout_width="match_parent"
-            android:layout_height="627dp"
-            app:layout_anchor="@+id/constraintLayout"
-            app:layout_anchorGravity="center"
-            app:layout_constraintEnd_toEndOf="@id/appbar"
-            app:layout_constraintStart_toStartOf="@id/appbar"
-            app:layout_constraintTop_toBottomOf="@+id/appbar">
-
-        </androidx.viewpager.widget.ViewPager>
-
         <View
             app:layout_constraintBottom_toTopOf="@+id/bnve"
             android:layout_width="match_parent"
@@ -117,4 +101,13 @@
 
         </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/homeViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        app:layout_anchor="@+id/constraintLayout"
+        app:layout_anchorGravity="center">
+
+    </androidx.viewpager.widget.ViewPager>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

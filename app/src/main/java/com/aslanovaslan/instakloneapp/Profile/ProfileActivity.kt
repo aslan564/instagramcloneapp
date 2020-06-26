@@ -19,6 +19,18 @@ class ProfileActivity : AppCompatActivity() {
         setNavigationBotomMenu();
     }
 
+
+    /*
+    *
+    *  <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp">
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    *
+    *
+    * */
     private fun setupSettingsProfileUser() {
         accountSettingsImageView.setOnClickListener {
             val intent = Intent(this, ProfileSettingsActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
