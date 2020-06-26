@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_homeImage"
+        android:icon="@drawable/ic_bootommenuhome"
+        android:title="" />
+    <item
+        android:id="@+id/ic_searchImage"
+        android:icon="@drawable/ic_bootommenusearch"
+        android:title=""/>
+    <item
+        android:id="@+id/ic_addphotoImage"
+        android:checked="true"
+        android:icon="@drawable/ic_bootommenushare"
+        android:title=""/>
+    <item
+        android:id="@+id/ic_newsImage"
+        android:icon="@drawable/ic_bootommenufavorite"
+        android:title=""/>
+    <item
+        android:id="@+id/ic_profileImage"
+        android:icon="@drawable/ic_bootomaccount"
+        android:title=""/>
+</menu>

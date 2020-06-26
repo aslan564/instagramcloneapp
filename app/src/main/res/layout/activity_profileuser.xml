@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/usernameToolbarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:text="aslanov_aslanasd"
+        android:textColor="@color/blackColor"
+        app:layout_constraintBottom_toBottomOf="@+id/discoverImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/discoverImageView" />
+
+    <ImageView
+        android:id="@+id/discoverImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_people_discover"
+        app:layout_constraintBottom_toBottomOf="@+id/accountSettingsImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usernameToolbarTextView"
+        app:layout_constraintTop_toTopOf="@+id/accountSettingsImageView" />
+
+    <ImageView
+        android:id="@+id/accountSettingsImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_profile_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toEndOf="@+id/discoverImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewSeperator3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="5sp"
+        android:background="@color/customPalet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountSettingsImageView" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_peopleprofile"
+        app:civ_border_color="@color/customPalet"
+        app:civ_border_width="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/usernameToolbarTextView"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/usernameToolbarTextView"
+        app:layout_constraintTop_toBottomOf="@+id/viewSeperator3" />
+
+    <TextView
+        android:id="@+id/postProfileTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="50"
+        android:textColor="@color/blackColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/followProfileTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="300"
+        android:textColor="@color/blackColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/postProfileTv"
+        app:layout_constraintEnd_toStartOf="@+id/followerProfileTv"
+        app:layout_constraintStart_toEndOf="@+id/postProfileTv"
+        app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/followerProfileTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="645"
+        android:textColor="@color/blackColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/followProfileTv"
+        app:layout_constraintEnd_toEndOf="@+id/discoverImageView"
+        app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="posts"
+        app:layout_constraintEnd_toEndOf="@+id/postProfileTv"
+        app:layout_constraintStart_toStartOf="@+id/postProfileTv"
+        app:layout_constraintTop_toBottomOf="@+id/postProfileTv" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="followers"
+        app:layout_constraintEnd_toEndOf="@+id/followProfileTv"
+        app:layout_constraintStart_toStartOf="@+id/followProfileTv"
+        app:layout_constraintTop_toBottomOf="@+id/followProfileTv" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="following"
+        app:layout_constraintEnd_toEndOf="@+id/followerProfileTv"
+        app:layout_constraintStart_toStartOf="@+id/followerProfileTv"
+        app:layout_constraintTop_toBottomOf="@+id/followerProfileTv" />
+
+    <TextView
+        android:id="@+id/profileFullNameTv"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Aslanov Aslan"
+        android:textColor="@color/blackColor"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/profileInfoTv"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileFullNameTv" />
+
+    <View
+        app:layout_constraintBottom_toTopOf="@+id/bnve"
+        android:layout_width="match_parent"
+        android:background="@color/customPalet"
+        android:layout_height="2dp">
+    </View>
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bnve"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="3dp"
+        app:itemIconTint="#000"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/botom_navigation_view">
+
+    </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_profile_button_background"
+        android:padding="4sp"
+        android:text="Edit Profile"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/postProfileTv"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
