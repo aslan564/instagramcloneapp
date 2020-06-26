@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Profile.ProfileSettingsActivity">
-
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/profileUserSettingContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <ImageView
         android:id="@+id/backProfileImg"
         android:layout_width="40dp"
@@ -125,7 +128,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:textColor="@color/instaSearchClear"
-        android:text="Hidden Account"
+        android:text="@string/log_out_sett_fragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvClearSearchArchive" />
@@ -150,4 +153,14 @@
         app:menu="@menu/botom_navigation_view">
 
     </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/profileSettingsContainerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
