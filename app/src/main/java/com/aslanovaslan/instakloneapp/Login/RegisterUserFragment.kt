@@ -14,6 +14,7 @@ import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import com.aslanovaslan.instakloneapp.Home.HomeActivity
 import com.aslanovaslan.instakloneapp.R
 import com.aslanovaslan.instakloneapp.UserModel.UserAccount
 import com.aslanovaslan.instakloneapp.utils.EventBusData
@@ -120,6 +121,12 @@ class RegisterUserFragment : Fragment() {
 														.child(userUid)
 														.setValue(createNewUserAccount)
 														.addOnSuccessListener {
+															val intent = Intent(
+																activity,
+																HomeActivity::class.java
+															).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+															startActivity(intent)
+															activity!!.finish()
 															fragmentUserProgres.visibility =
 																View.INVISIBLE
 															Toast.makeText(
@@ -190,6 +197,12 @@ class RegisterUserFragment : Fragment() {
 												.child(userUid)
 												.setValue(createNewUserAccount)
 												.addOnSuccessListener {
+													val intent = Intent(
+														activity,
+														HomeActivity::class.java
+													).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+													startActivity(intent)
+													activity!!.finish()
 													fragmentUserProgres.visibility = View.INVISIBLE
 													Toast.makeText(
 														activity,

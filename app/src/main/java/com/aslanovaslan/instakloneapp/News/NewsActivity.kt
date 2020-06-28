@@ -4,9 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.aslanovaslan.instakloneapp.R
 import com.aslanovaslan.instakloneapp.utils.BottonNavigationHelper
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.bnve
-import kotlinx.android.synthetic.main.activity_profileuser.*
+import kotlinx.android.synthetic.main.activity_news.*
+
 
 class NewsActivity : AppCompatActivity() {
 
@@ -20,8 +19,8 @@ class NewsActivity : AppCompatActivity() {
     }
 
     fun setNavigationBotomMenu() {
-        BottonNavigationHelper.setupButtonNavigationLocation(this,bnve)
-        val menu=bnve.menu
+        BottonNavigationHelper.setupButtonNavigationLocation(this,bnveNews)
+        val menu=bnveNews.menu
         val menuItem=menu.getItem(ACTIVITY_NO)
         menuItem.isChecked = true
     }
