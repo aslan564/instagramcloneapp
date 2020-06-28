@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "710181773872",
+    "firebase_url": "https://instaklonekotlin.firebaseio.com",
+    "project_id": "instaklonekotlin",
+    "storage_bucket": "instaklonekotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710181773872:android:73e6d912499fbb5d0383f5",
+        "android_client_info": {
+          "package_name": "com.aslanovaslan.instakloneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710181773872-u81r49g53f3epfo185ur603t7ikjqd2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aslanovaslan.instakloneapp",
+            "certificate_hash": "fc66e34f99f871ef34ec6b398bbfd2e635c35333"
+          }
+        },
+        {
+          "client_id": "710181773872-d3p0drnv6a2mv85nv0c6g4908cgc5gth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-DdqN-hXSF_bpYZaONps3tD0yoMSJZ-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710181773872-d3p0drnv6a2mv85nv0c6g4908cgc5gth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

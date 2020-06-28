@@ -4,7 +4,7 @@
     <shape android:shape="rectangle">
         <corners android:radius="6dp" />
         <stroke android:color="@color/instaSearchClear" android:width="1dp"/>
-        <solid android:color="#DAE6E5E5" />
+        <solid android:color="@color/instaSearchClear" />
     </shape>
 </item>
 </layer-list>
