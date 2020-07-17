@@ -2,12 +2,9 @@ package com.aslanovaslan.instakloneapp.utils
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
-import android.view.MenuItem
-import android.widget.Toast
-import com.aslanovaslan.instakloneapp.Home.HomeActivity
+import com.aslanovaslan.instakloneapp.home.HomeActivity
 import com.aslanovaslan.instakloneapp.News.NewsActivity
-import com.aslanovaslan.instakloneapp.Profile.ProfileActivity
+import com.aslanovaslan.instakloneapp.profile.ProfileActivity
 import com.aslanovaslan.instakloneapp.R
 import com.aslanovaslan.instakloneapp.Search.SearchActivity
 import com.aslanovaslan.instakloneapp.Share.ShareActivity

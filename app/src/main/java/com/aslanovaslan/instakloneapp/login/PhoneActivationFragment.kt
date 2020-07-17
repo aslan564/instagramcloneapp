@@ -1,4 +1,4 @@
-package com.aslanovaslan.instakloneapp.Login
+package com.aslanovaslan.instakloneapp.login
 
 import android.content.ContentValues.TAG
 import android.content.Context

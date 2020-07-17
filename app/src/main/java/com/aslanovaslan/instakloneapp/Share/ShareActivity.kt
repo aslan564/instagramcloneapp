@@ -3,26 +3,34 @@ package com.aslanovaslan.instakloneapp.Share
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.aslanovaslan.instakloneapp.R
-import com.aslanovaslan.instakloneapp.utils.BottonNavigationHelper
-import kotlinx.android.synthetic.main.activity_main.bnve
-import kotlinx.android.synthetic.main.activity_profileuser.*
+import com.aslanovaslan.instakloneapp.utils.SharedPagerAdapter
+import kotlinx.android.synthetic.main.activity_share.*
 
 class ShareActivity : AppCompatActivity() {
 
-    private val TAG="ShareActivity"
-    private val ACTIVITY_NO=2
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+	override fun onCreate(savedInstanceState: Bundle?) {
+		super.onCreate(savedInstanceState)
+		setContentView(R.layout.activity_share)
 
-        setNavigationBotomMenu();
-    }
+		setupNavigationShared();
+	}
 
-    fun setNavigationBotomMenu() {
-        BottonNavigationHelper.setupButtonNavigationLocation(this,bnve)
-        val menu=bnve.menu
-        val menuItem=menu.getItem(ACTIVITY_NO)
-        menuItem.isChecked = true
-    }
+	private fun setupNavigationShared() {
+		var tabName:ArrayList<String> = ArrayList()
+		tabName.add("GALERY")
+		tabName.add("CAMERA")
+		tabName.add("VIDEO")
+		val sharedPagerAdapter = SharedPagerAdapter(supportFragmentManager,tabName)
+		sharedPagerAdapter.addFragmentShared(SharedGaleryFragment())
+		sharedPagerAdapter.addFragmentShared(SharedCameraFragment())
+		sharedPagerAdapter.addFragmentShared(SharedViedeoFragment())
 
+		viewPagerShared.adapter=sharedPagerAdapter
+		tabLayoutShared.setupWithViewPager(viewPagerShared)
+		//viewPagerShared.setCurrentItem(1,true)
+	}
+
+	companion object {
+		private const val TAG = "ShareActivity"
+	}
 }

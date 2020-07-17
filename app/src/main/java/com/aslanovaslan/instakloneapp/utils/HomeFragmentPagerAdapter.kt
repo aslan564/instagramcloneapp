@@ -16,10 +16,6 @@ class HomeFragmentPagerAdapter (fm: FragmentManager):
         return myFragmentList.size
     }
 
-    /* fun getPageCounte(position: Fragment) : Int {
-         return myFragmentList.indexOf(position)
-    }*/
-
     fun addFragmentList(fragment: Fragment) {
         this.myFragmentList.add(fragment)
     }

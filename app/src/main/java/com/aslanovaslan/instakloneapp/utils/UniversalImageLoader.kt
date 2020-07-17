@@ -25,6 +25,8 @@ class UniversalImageLoader(val mContex: Context) {
                 .cacheOnDisk(true).cacheInMemory(true)
                 .cacheOnDisk(true).resetViewBeforeLoading(true)
                 .imageScaleType(ImageScaleType.EXACTLY)
+                .considerExifParams(true)
+                .bitmapConfig(Bitmap.Config.RGB_565)
                 .displayer(FadeInBitmapDisplayer(400))
                 .build()
             return ImageLoaderConfiguration.Builder(mContex)
@@ -35,7 +37,7 @@ class UniversalImageLoader(val mContex: Context) {
         }
 
     companion object {
-        private val defaultImage = R.drawable.ic_peopleprofile
+        private const val defaultImage = R.drawable.ic_peopleprofile
         fun setImage(
             secondImgUrl: String,
             imageView: ImageView,

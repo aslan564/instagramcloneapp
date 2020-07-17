@@ -2,8 +2,6 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
-
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -31,7 +29,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="16dp"
-                    android:contentDescription="TODO"
+                    android:contentDescription="@string/direct_home"
                     android:src="@drawable/ic_appbardirect"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -41,10 +39,10 @@
                     android:id="@+id/imageLogoView"
                     android:layout_width="150sp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="64dp"
-                    android:contentDescription="TODO"
+                    android:contentDescription="@string/image_logoh_ome"
                     android:src="@drawable/clonelogo"
                     app:layout_constraintBottom_toBottomOf="@+id/imageCameraView"
+                    app:layout_constraintEnd_toStartOf="@+id/imageDirectView"
                     app:layout_constraintStart_toEndOf="@+id/imageCameraView"
                     app:layout_constraintTop_toTopOf="@+id/imageCameraView" />
 
@@ -53,7 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:contentDescription="TODO"
+                    android:contentDescription="@string/camera_home"
                     android:src="@drawable/ic_appbarcamera"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -82,11 +80,11 @@
             app:layout_constraintTop_toBottomOf="@+id/appbar" />
 
         <View
-            app:layout_constraintBottom_toTopOf="@+id/bnve"
+            android:id="@+id/view3"
             android:layout_width="match_parent"
+            android:layout_height="2dp"
             android:background="@color/customPalet"
-            android:layout_height="2dp">
-        </View>
+            app:layout_constraintBottom_toTopOf="@+id/bnve" />
 
         <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
             android:id="@+id/bnve"
@@ -100,14 +98,16 @@
             app:menu="@menu/botom_navigation_view">
 
         </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/homeViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/viewSeperator1"
+            tools:layout_editor_absoluteX="6dp">
+
+        </androidx.viewpager.widget.ViewPager>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/homeViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="627dp"
-        app:layout_anchor="@+id/constraintLayout"
-        app:layout_anchorGravity="center">
-
-    </androidx.viewpager.widget.ViewPager>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile.ProfileSettingsActivity">
+    tools:context=".profile.ProfileSettingsActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/profileUserSettingContainer"
@@ -19,14 +19,15 @@
             android:layout_marginTop="8dp"
             android:src="@drawable/ic_backprofile"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/back_profile" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:text="Settings"
+            android:text="@string/settings"
             android:textColor="@color/blackColor"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -41,7 +42,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:text="Account Settings"
+            android:text="@string/account_settings"
             android:textColor="@color/blackColor"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -145,7 +146,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@color/customPalet"
-            app:layout_constraintBottom_toTopOf="@+id/bnve"></View>
+            app:layout_constraintBottom_toTopOf="@+id/bnve" />
 
         <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
             android:id="@+id/bnve"
